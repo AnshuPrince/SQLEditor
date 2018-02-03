@@ -1,10 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package JdbcMark1;
-
 import java.sql.*;
 import javax.sql.*;
 import java.awt.*;
@@ -30,10 +23,10 @@ public class mark3 extends Frame{
     }
     public void prepareConnection() throws Exception
     {
-        Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-        String url = "jdbc:sqlserver://localhost;databaseName=anshu";
-        String user = "sa";
-        String password = "anshu123";
+        Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");//DriverClass
+        String url = "jdbc:sqlserver://localhost;databaseName=anshu";//url
+        String user = "";//Username for login
+        String password = "";//password for login
         con = DriverManager.getConnection(url, user, password);
         st = con.createStatement();
     }
