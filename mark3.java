@@ -141,12 +141,12 @@ private String getString(String s,int len)
 }
 private String getLines(int  len)
 {
-    String s="";
-     for(int i= s.length();i<=(len);i++)
+    String str="";
+     for(int i= str.length();i<=(len);i++)
     {
-        s+="-";
+        str+="-";
     }
-     return s+"     ";
+     return str+"     ";
 }
 private void exitForm(WindowEvent evt)
 {
